@@ -15,5 +15,8 @@ if not re.match(REGEX, subpackage):
 
 for s in package.split('.'):
     if not re.match(REGEX, s):
-        print('ERROR: {} is not a valid Python module name!'.format(s), file=sys.stderr)
+        print(
+            'ERROR: {} is not a valid Python module name!'.format(s),
+            file=sys.stderr
+        )
         sys.exit(1)
