@@ -1,0 +1,9 @@
+{
+    "project_name": "my-services-submodule",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('.', '_').replace('-', '_') }}",
+    "namespace": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('.', '_').replace('-', '_').split('_')[:-1]|join('.') }}",
+    "subpackage": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('.', '_').replace('-', '_').split('_')[-1] }}",
+    "author": "",
+    "author_email": "",
+    "description": ""
+}
