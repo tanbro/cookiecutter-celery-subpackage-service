@@ -40,8 +40,9 @@ The whole projects is like:
 │
 ├── myproject-othermodule
 │   ├── README.md
-│   ├── setup.py
-│   └── othermodule.py
+│   └─── setup.py
+│        └── myproject
+│            └── othermodule.py
 │
 └── ...
 ```
