@@ -1,9 +1,9 @@
 # cookiecutter-celery-subpackage-service
 
-This is a [cookiecutter][] template for a project that:
+This is a [cookiecutter][] template for a [python][] project that:
 
 > - is a [celery][] worker, with [tasks][] in it.
-> - is a sub-package, and it's parent project has multiple other similar sub-packages.
+> - is a sub-package, and it's parent namespace has multiple other similar sub-packages.
 
 The whole projects is like:
 
@@ -58,8 +58,8 @@ cookiecutter cookiecutter-celery-subpackage-service
 
 When generated:
 
-- `Hello world` [celery][] [tasks][] is defined in `tasks.py`
-- [celery][] application variable `app` is defined in `app.py`
+- `Hello world` [celery][] [tasks][] defined in `tasks.py`
+- [celery][] application variable `app` defined in `app.py`
 
 ## Develop
 
@@ -72,9 +72,22 @@ python setup.py develop
 
 ## Requires
 
-[cookiecutter][] `0.7`+ on a [Python][] `3.5`+ environment
+- [Python][] `3.5`+ environment
+- [setuptools][] `41.0.1`+
+- [cookiecutter][] `1.0`+
+
+> ❗ **Attention**:
+>
+> Since [setuptools][] `41.0.1`+ required, an update would be necessary:
+>
+> ```bash
+> pip install -U setuptools
+> ```
+>
+> if you have a lower version of [setuptools][]
 
 [cookiecutter]: https://github.com/audreyr/cookiecutter "A command-line utility that creates projects from cookiecutters (project templates)"
 [Python]: https://python.org/
 [celery]: http://www.celeryproject.org/ "Distributed Task Queue"
 [tasks]: http://docs.celeryproject.org/en/latest/userguide/tasks.html "Tasks are the building blocks of Celery applications"
+[setuptools]: https://packaging.python.org/key_projects/#easy-install "setuptools (which includes easy_install) is a collection of enhancements to the Python distutils that allow you to more easily build and distribute Python distributions, especially ones that have dependencies on other packages."
