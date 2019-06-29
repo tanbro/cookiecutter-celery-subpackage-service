@@ -1,0 +1,9 @@
+{%- if cookiecutter.readme_format == "Markdown" -%}
+# {{cookiecutter.project_slug}}
+{%- else -%}
+{{ '=' * cookiecutter.project_slug|length }}
+{{cookiecutter.project_slug}}
+{{ '=' * cookiecutter.project_slug|length }}
+{%- endif %}
+
+{{cookiecutter.description}}

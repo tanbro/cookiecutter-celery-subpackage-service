@@ -73,12 +73,12 @@ python setup.py develop
 ## Requires
 
 - [Python][] `3.5`+ environment
-- [setuptools][] `41.0.1`+
-- [cookiecutter][] `1.0`+
+- [setuptools][] `40.1.0`+
+- [cookiecutter][] `1.5`+
 
 > ❗ **Attention**:
 >
-> Since [setuptools][] `41.0.1`+ required, an update would be necessary:
+> Since [setuptools][] `40.1.0`+ required, an update would be necessary:
 >
 > ```bash
 > pip install -U setuptools

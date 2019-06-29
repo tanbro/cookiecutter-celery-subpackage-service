@@ -4,7 +4,10 @@
     "project_dir": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('.', '_').replace('-', '_') }}",
     "namespace": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('.', '_').replace('-', '_').split('_')[:-1]|join('.') }}",
     "subpackage": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('.', '_').replace('-', '_').split('_')[-1] }}",
+    "src_dir": [true, false],
+    "tests_dir": [true, false],
     "author": "",
     "author_email": "",
-    "description": ""
+    "description": "",
+    "readme_format": ["Markdown", "reStructuredText", "plain text"]
 }

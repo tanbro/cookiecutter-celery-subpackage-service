@@ -5,13 +5,9 @@ print('INFO: pre-hook ...')
 
 REGEX = re.compile(r'^[_a-zA-Z][_a-zA-Z0-9]*$')
 
-subpackage = '{{ cookiecutter.subpackage }}'
-namespace = '{{ cookiecutter.namespace }}'
+subpackage = '{{cookiecutter.subpackage}}'
+namespace = '{{cookiecutter.namespace}}'
 package = '.'.join((namespace, subpackage))
-
-if not re.match(REGEX, subpackage):
-    print('ERROR: {!r} is not a valid Python sub-package name!'.format(subpackage), file=sys.stderr)
-    sys.exit(1)
 
 for s in package.split('.'):
     if not re.match(REGEX, s):
@@ -20,3 +16,5 @@ for s in package.split('.'):
             file=sys.stderr
         )
         sys.exit(1)
+
+print('INFO: pre-hook complete.')
