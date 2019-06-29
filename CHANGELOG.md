@@ -1,7 +1,7 @@
 # CHANGELOG
 
-## 0.1.a2
+## 0.1.a3
 
-**📅 `2019-06-28`**
+**📅 `2019-06-29`**
 
-The first alpha version
+Alpha version
