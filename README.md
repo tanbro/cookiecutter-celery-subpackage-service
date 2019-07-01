@@ -14,6 +14,7 @@ The whole projects is like:
 │
 ├── myproject-services-subpack1
 │   ├── README.md
+│   ├── setup.cfg
 │   ├── setup.py
 │   ├── tests/
 │   └── src
@@ -26,6 +27,7 @@ The whole projects is like:
 │
 ├── myproject-services-subpack2
 │   ├── README.md
+│   ├── setup.cfg
 │   ├── setup.py
 │   ├── tests/
 │   └── src
