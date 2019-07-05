@@ -9,5 +9,6 @@
     "author": "",
     "author_email": "",
     "description": "",
-    "readme_format": ["Markdown", "reStructuredText", "plain text"]
+    "readme_format": ["Markdown", "reStructuredText", "plain text"],
+    "download_python_git_ignore": [true, false]
 }
